@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Média de Nota</title>
+    <link href="jadi.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+    
+        <div class="main-title">
+    
+            <h1 id="text-title">Cálculo de média</h1>
+    
+        </div>
+    
+    </header>
+
+    <section>
+
+    <p>média:</p>
+    <p><span id="med">______</span></p>
+    <p>situação:</p>
+    <p><span id="situ" style="color: red;">_______</span></p>
+
+    </section>
+    <script>
+        let n1 = parseFloat(prompt('Digite a Primeira nota:'));
+        let n2 = parseFloat(prompt('Digite a Pegunda nota:'));
+        let media = (n1 + n2)/2;
+        if (media >= 6) {
+            
+            document.getElementById('situ').innerHTML= 'Aprovado!';
+            document.getElementById('situ').style.color= 'blue';
+        } else {
+            
+            document.getElementById('situ').innerHTML= 'Reprovado!';
+            document.getElementById('situ').style.color= 'red';
+        }
+
+        document.getElementById('med').innerHTML= media;
+    </script>
+
+<footer>
+    <p>
+        Jadielle
+    </p>
+
+</footer>
+
+</body></html>
